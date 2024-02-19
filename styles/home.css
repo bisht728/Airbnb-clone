@@ -1,0 +1,80 @@
+.location-cards-section {
+}
+
+.cards-wrapper {
+    width: 90%;
+    margin: 1rem auto;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+}
+.location-card {
+    width: 23%;
+    height: 25rem;
+}
+.location-img {
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+.location-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.location-desc {
+    width: 100%;
+    height: 25%;
+}
+.location-desc-b1 {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location-name {
+  font-weight: 700;
+}
+.location-rating svg {
+  width: 18px;
+  height: 18px;  
+}
+.location-rating span {
+    font-weight: 500;
+    color: #333;
+}
+.location-desc-b2 {
+    font-size: 500;
+    color: rgb(120, 118, 118);
+}
+.location-desc-b3 {
+    width: 100%;
+    height: 33%;
+    font-size: 14px;
+}
+.location-desc-b3 price {
+    font-weight: 800;
+}
+
+.show-more-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-more-block h3 {
+    font-size: 1.05rem;
+}
+
+.show-more-block button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
