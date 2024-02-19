@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb | Holiday rentals, cabins</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+  </head>
+<body>
+<header class="main-header">
+      <div class="header-strip1">
+        <div class="header-logo">
+          <a href="#">
+           <img src="../assets/logo.png" alt="logo" /> 
+          </a>  
+        </div>
+        <nav class="main-navigation">
+          <ul class="nav-list">
+            <li class="nav-item active">Stays</li>
+            <li class="nav-item">Experiences</li>
+            <li class="nav-item">
+              <a href="#">Online Experiences</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-strip1-right-block">
+          <span class="airbnb-home-link">
+            <a href="#">Airbnb your home</a>
+          </span>
+          <span class="airbnb-lang-icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+              ></path>
+            </svg>
+          </span>
+          <button class="sign-in-modal-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              style="width: 30px; height: 30px"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header-strip2">
+        <div class="main-search-bar">
+          <div class="search-option-item option-item1">
+            <label for="dest">Where</label>
+            <input
+              id="dest"
+              type="text"
+              name="dest"
+              placeholder="Search destinations"
+            />
+          </div>
+          <div class="search-option-item option-item2">
+            <label for="check-in">Check in</label>
+            <span>Add dates</span>
+          </div>
+          <div class="search-option-item option-item3">
+            <label for="check-out">Check out</label>
+            <span>Add dates</span>
+          </div>
+          <div class="search-option-item option-item4">
+            <div class="option-item4-child1">
+              <label for="check-out">Who</label>
+              <span>Add Guests</span>
+            </div>
+            <button class="search-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+  </header>
+
+<section class="location-cards-section">
+<div class="cards-wrapper">
+   <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/89565da2-41b0-443f-84a6-62930398d3cd.jpg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">Munnar, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.81</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>2,070 kilometer away</p>
+          <p>2-7 Mar</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;2,417</span>
+          <span>night</span>
+        </div>
+      </div>
+    </div>
+
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-751206971626894382/original/e0607051-4fe3-43d4-b808-ea9422113003.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">Hiriwadunna, Srilanka</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.88</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>2,319 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;3,222</span>
+          <span>night</span>
+        </div>
+      </div>
+    </div>
+
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50296444/original/0bde4ac2-cc6d-4767-b38f-0366c651a317.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">New Delhi, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.83</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>17 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;44,506</span>
+          <span>night</span>
+        </div>
+      </div>
+
+      
+    </div>
+
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50296444/original/0bde4ac2-cc6d-4767-b38f-0366c651a317.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">New Delhi, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.83</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>17 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;44,506</span>
+          <span>night</span>
+        </div>
+      </div>
+
+      
+    </div>
+
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50296444/original/0bde4ac2-cc6d-4767-b38f-0366c651a317.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">New Delhi, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.83</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>17 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;44,506</span>
+          <span>night</span>
+        </div>
+      </div>
+
+      
+    </div>
+
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50296444/original/0bde4ac2-cc6d-4767-b38f-0366c651a317.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">New Delhi, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.83</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>17 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;44,506</span>
+          <span>night</span>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  <div class="location-card">
+      <div class="location-img">
+        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-50296444/original/0bde4ac2-cc6d-4767-b38f-0366c651a317.jpeg?im_w=720" alt="location">
+      </div>
+      <div class="location-desc">
+        <div class="location-desc-b1">
+          <span class="location-name">New Delhi, India</span>
+          <span class="location-rating">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+             viewBox="0 0 256 256">
+             <path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg>
+            <span>4.83</span>
+          </span>
+        </div>
+        <div class="location-desc-b2">
+          <p>17 kilometer away</p>
+          <p>16-21 Feb</p>
+        </div>
+        <div class="location-desc-b3">
+          <span class="price">&#8377;44,506</span>
+          <span>night</span>
+        </div>
+      </div>
+
+      
+    </div>  
+<div>Pagiantion Button</div>    
+</div>
+<div class="show-more-block">
+  <h3>Continue exploring top of the world homes</h3>
+  <button>Show more</button>
+</div>  
+</section>
+
+
+  </body>
+  </html>
